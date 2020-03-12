@@ -35,7 +35,7 @@ public class LNRNotificationView: UIView, UIGestureRecognizerDelegate {
         self.notification = notification
         self.notificationManager = notificationManager
         
-        let notificationWidth: CGFloat = (UIApplication.shared.keyWindow?.bounds.width)!
+        let notificationWidth: CGFloat = (UIApplication.shared.keyWindow?.bounds.width) ?? .zero
         let padding: CGFloat = kLNRNotificationViewMinimumPadding
         
         super.init(frame: CGRect.zero)
